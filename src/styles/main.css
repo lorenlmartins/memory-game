@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #fc1e8a;
+    background-color: #fc1e8a;
     user-select: none;
 }
 
@@ -15,11 +15,11 @@ body {
     align-items: center;
     gap: 30px;
     background: linear-gradient(
-        325deg,
+        325deg, 
         #03001e 0%,
         #7303c0 30%,
         #ec38bc 70%,
-        #ffe1a1 100% /* Mudança da cor de fundo do contêiner */
+        #ffe1a1 100% 
     );
     padding: 40px 60px;
     border-radius: 15px;
@@ -55,11 +55,12 @@ h2 {
 }
 
 .game {
-    width: 480px;
+    width: 430px;
     height: 430px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    transform-style: preserve-3d;
     perspective: 1000px;
 }
 
