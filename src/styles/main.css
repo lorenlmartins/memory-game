@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@ body{
     user-select: none;
 }
 
-.container{
+.container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -15,52 +15,55 @@ body{
     align-items: center;
     gap: 30px;
     background: linear-gradient(
-    325deg,
-    #03001e 0%,
-    #7303c0 30%,
-    #ec38bc 70%,
-    #fdeff9 100%
+        325deg,
+        #03001e 0%,
+        #7303c0 30%,
+        #ec38bc 70%,
+        #ffe1a1 100% /* Mudança da cor de fundo do contêiner */
     );
     padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
-h2{
+h2 {
     font-size: 3em;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.reset{
+.reset {
     padding: 15px 20px;
     width: 100%;
     color: #03001e;
     background-color: #ffffff;
     border: none;
+    border-radius: 5px;
     font-size: 1.5em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.reset:focus{
-    color: #ec38bc;
-    background-color: #262809;
+.reset:hover {
+    background-color: #ec38bc;
+    transform: scale(1.05);
 }
 
-.game{
-    border: 1px solid red;
-    width: 430px;
+.game {
+    width: 480px;
     height: 430px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    transform-style: preserve-3d;
-    perspective: 500px;
+    perspective: 1000px;
 }
 
-.item{
+.item {
     position: relative;
     width: 100px;
     height: 100px;
@@ -68,20 +71,23 @@ h2{
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     font-size: 3em;
     transform: rotateY(180deg);
-    transition: 0.25s;
+    transition: 0.5s;
 }
 
-.item::after{
+.item::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: #404040;
-    transition: 0.25s;
-    transform: rotate(0deg);
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    border-radius: 10px;
+    transition: 0.5s;
+    transform: rotateY(0deg);
     backface-visibility: hidden;
+    border: 1px solid #ccc;
 }
 
 .item.boxOpen {
@@ -90,4 +96,9 @@ h2{
 
 .boxOpen::after {
     transform: rotateY(180deg);
+}
+
+.boxMatch {
+    background-color: #ffffff;
+    pointer-events: none;
 }
