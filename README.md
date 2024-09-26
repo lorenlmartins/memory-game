@@ -8,6 +8,7 @@ Veja o jogo em ação [aqui](https://lorenlmartins.github.io/memory-game/).
 
 ## Screenshot
 
-![image](https://github.com/user-attachments/assets/24e1f7fb-641c-428f-86ab-b2613d1caa11)
+![image](https://github.com/user-attachments/assets/a2d565d0-3102-4987-9953-99f1ba1a3709)
+
 
 
