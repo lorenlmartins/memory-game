@@ -1,10 +1,10 @@
-# Jogo da Memória
+# Memory Game
 
-Um jogo da memória simples, onde os jogadores precisam encontrar pares de cartas correspondentes.
+A simple memory game where players need to find pairs of matching cards.
 
-## Demonstração
+## Demo
 
-Veja o jogo em ação [aqui](https://lorenlmartins.github.io/memory-game/).
+See the game in action [here](https://lorenlmartins.github.io/memory-game/).
 
 ## Screenshot
 
